@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Key Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div id="app" class="container mx-auto p-4 md:p-8 max-w-5xl">
+        <h1 class="text-3xl font-bold text-gray-900 mb-6">Admin Dashboard</h1>
+
+        <!-- Login Section -->
+        <div id="login-section" class="bg-white p-8 rounded-lg shadow-md max-w-sm mx-auto">
+            <h2 class="text-2xl font-semibold mb-4 text-center">Admin Login</h2>
+            <form id="login-form">
+                <div class="mb-4">
+                    <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                    <input type="text" id="username" name="username" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" id="password" name="password" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Sign In
+                </button>
+                <p id="login-error" class="text-red-500 text-sm mt-4 text-center"></p>
+            </form>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div id="dashboard-section" class="hidden">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-semibold">Manage License Keys</h2>
+                <button id="logout-btn" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md shadow">Logout</button>
+            </div>
+
+            <!-- Key Generation -->
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-xl font-semibold mb-4">Generate New Key</h3>
+                <form id="generate-form" class="flex items-center gap-4">
+                    <input type="email" id="email" name="email" placeholder="customer@example.com" required class="flex-grow block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md shadow">Generate</button>
+                </form>
+                 <p id="generate-message" class="text-sm mt-3"></p>
+            </div>
+
+            <!-- Key List -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex justify-between items-center mb-4">
+                     <h3 class="text-xl font-semibold">Existing Keys</h3>
+                     <div>
+                        <label for="status-filter" class="text-sm font-medium">Filter by status:</label>
+                        <select id="status-filter" class="ml-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                            <option value="">All</option>
+                            <option value="UNUSED">Unused</option>
+                            <option value="ACTIVATED">Activated</option>
+                            <option value="DEACTIVATED">Deactivated</option>
+                        </select>
+                     </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Serial Key</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="keys-tbody" class="bg-white divide-y divide-gray-200">
+                            <!-- Rows will be injected here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const loginSection = document.getElementById('login-section');
+        const dashboardSection = document.getElementById('dashboard-section');
+        const loginForm = document.getElementById('login-form');
+        const generateForm = document.getElementById('generate-form');
+        const keysTbody = document.getElementById('keys-tbody');
+        const logoutBtn = document.getElementById('logout-btn');
+        const statusFilter = document.getElementById('status-filter');
+        const loginError = document.getElementById('login-error');
+        const generateMessage = document.getElementById('generate-message');
+
+        const apiRequest = async (endpoint, method = 'GET', body = null) => {
+            const headers = { 'Content-Type': 'application/json' };
+            const token = localStorage.getItem('authToken');
+            if (token) {
+                headers['Authorization'] = `Bearer ${token}`;
+            }
+
+            const config = {
+                method,
+                headers,
+            };
+
+            if (body) {
+                config.body = JSON.stringify(body);
+            }
+
+            try {
+                const response = await fetch(`/admin${endpoint}`, config);
+                if (response.status === 401) {
+                    logout();
+                    return null;
+                }
+                return await response.json();
+            } catch (error) {
+                console.error('API Request Error:', error);
+                return null;
+            }
+        };
+        
+        const renderKeys = (keys) => {
+            keysTbody.innerHTML = '';
+            if (keys.length === 0) {
+                keysTbody.innerHTML = `<tr><td colspan="4" class="text-center py-4">No keys found.</td></tr>`;
+                return;
+            }
+            keys.forEach(key => {
+                const statusColor = {
+                    'UNUSED': 'bg-blue-100 text-blue-800',
+                    'ACTIVATED': 'bg-green-100 text-green-800',
+                    'DEACTIVATED': 'bg-yellow-100 text-yellow-800',
+                }[key.status] || 'bg-gray-100 text-gray-800';
+
+                const row = `
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${key.email}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-600">${key.serialKey}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${statusColor}">
+                                ${key.status}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                            ${key.status === 'ACTIVATED' ? `<button class="text-yellow-600 hover:text-yellow-900" onclick="deactivateKey('${key.id}')">Deactivate</button>` : ''}
+                            <button class="text-red-600 hover:text-red-900 ml-4" onclick="deleteKey('${key.id}')">Delete</button>
+                        </td>
+                    </tr>
+                `;
+                keysTbody.innerHTML += row;
+            });
+        };
+
+        const fetchKeys = async () => {
+            const status = statusFilter.value;
+            const endpoint = status ? `/keys?status=${status}` : '/keys';
+            const keys = await apiRequest(endpoint);
+            if (keys) renderKeys(keys);
+        };
+
+        const login = (token) => {
+            localStorage.setItem('authToken', token);
+            loginSection.classList.add('hidden');
+            dashboardSection.classList.remove('hidden');
+            fetchKeys();
+        };
+
+        const logout = () => {
+            localStorage.removeItem('authToken');
+            loginSection.classList.remove('hidden');
+            dashboardSection.classList.add('hidden');
+        };
+
+        window.deactivateKey = async (id) => {
+            if (!confirm('Are you sure you want to deactivate this key?')) return;
+            const result = await apiRequest(`/keys/${id}/deactivate`, 'POST');
+            if (result && result.success) {
+                fetchKeys();
+            }
+        };
+
+        window.deleteKey = async (id) => {
+            if (!confirm('Are you sure you want to permanently delete this key? This cannot be undone.')) return;
+            const result = await apiRequest(`/keys/${id}`, 'DELETE');
+            if (result && result.success) {
+                fetchKeys();
+            }
+        };
+        
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            loginError.textContent = '';
+            const formData = new FormData(loginForm);
+            const data = Object.fromEntries(formData.entries());
+            
+            const result = await apiRequest('/login', 'POST', data);
+
+            if (result && result.success) {
+                login(result.token);
+            } else {
+                loginError.textContent = result?.message || 'Login failed.';
+            }
+        });
+
+        generateForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            generateMessage.textContent = '';
+            const formData = new FormData(generateForm);
+            const data = Object.fromEntries(formData.entries());
+
+            const result = await apiRequest('/keys', 'POST', data);
+
+            if (result && result.success) {
+                generateMessage.textContent = `Successfully generated key: ${result.data.serialKey}`;
+                generateMessage.className = 'text-green-600 text-sm mt-3';
+                generateForm.reset();
+                fetchKeys();
+            } else {
+                generateMessage.textContent = result?.message || 'Failed to generate key.';
+                generateMessage.className = 'text-red-600 text-sm mt-3';
+            }
+        });
+
+        logoutBtn.addEventListener('click', logout);
+        statusFilter.addEventListener('change', fetchKeys);
+
+        // Check for existing token on page load
+        const token = localStorage.getItem('authToken');
+        if (token) {
+            login(token);
+        }
+    </script>
+</body>
+</html>

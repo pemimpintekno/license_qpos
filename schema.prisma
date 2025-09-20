@@ -1,0 +1,26 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = "file:./dev.db"
+}
+
+model licenseKey {
+    id          String    @id @default(uuid())
+    serialKey   String    @unique
+    status      String    @default("UNUSED") // Could be "UNUSED", "ACTIVATED", "DISABLED"
+    email       String?   @unique
+    deviceId    String?
+    createdAt   DateTime  @default(now())
+    activatedAt DateTime?
+}
+
+// New model for Admin users
+model Admin {
+  id        String   @id @default(uuid())
+  username  String   @unique
+  password  String // This will store a hashed password
+  createdAt DateTime @default(now())
+}
