@@ -14,7 +14,8 @@
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
     "@types/bun": "latest",
-    "@types/node": "^24.5.2"
+    "@types/node": "^24.5.2",
+    "@types/nodemailer": "^7.0.1"
   },
   "peerDependencies": {
     "typescript": "^5"
@@ -27,6 +28,7 @@
     "bcryptjs": "^3.0.2",
     "crypto": "^1.0.1",
     "elysia": "^1.4.6",
+    "nodemailer": "^7.0.6",
     "prisma": "^6.16.2"
   }
 }

@@ -6,6 +6,7 @@ import bcrypt from "bcryptjs";
 import { jwt } from "@elysiajs/jwt";
 import { html } from "@elysiajs/html";
 import { staticPlugin } from "@elysiajs/static";
+import { sendLicenseEmail } from "./email"; // Import the new email function
 
 // --- INITIALIZATION ---
 const prisma = new PrismaClient();
@@ -124,13 +125,13 @@ app.group("/admin", (app) =>
     .post(
       "/keys",
       async ({ body, set }) => {
+        let createdKey;
         try {
-          const newKey = generateUniqueKey(); // Simplified, assuming low collision chance for this example
-          const createdKey = await prisma.licenseKey.create({
+          const newKey = generateUniqueKey();
+          createdKey = await prisma.licenseKey.create({
             data: { serialKey: newKey, email: body.email },
           });
           console.log(`Admin generated new key for ${body.email}`);
-          return { success: true, data: createdKey };
         } catch (error: any) {
           if (error.code === "P2002") {
             set.status = 409;
@@ -140,7 +141,33 @@ app.group("/admin", (app) =>
             };
           }
           set.status = 500;
-          return { success: false, message: "Internal server error." };
+          return {
+            success: false,
+            message: "Internal server error during key creation.",
+          };
+        }
+
+        // After successfully creating the key, try to send the email.
+        try {
+          await sendLicenseEmail(createdKey.email!, createdKey.serialKey);
+          console.log(`Email sent successfully to ${createdKey.email}`);
+          return {
+            success: true,
+            data: createdKey,
+            message: "Key created and email sent successfully.",
+          };
+        } catch (emailError) {
+          console.error(
+            `Failed to send email to ${createdKey.email}:`,
+            emailError
+          );
+          // Return success because the key was created, but include a warning about the email.
+          return {
+            success: true,
+            data: createdKey,
+            message:
+              "Key created, but the email could not be sent. Please check server logs.",
+          };
         }
       },
       { body: t.Object({ email: t.String({ format: "email" }) }) }
