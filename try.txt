@@ -1,0 +1,239 @@
+Di antara campuran berikut, yang tergolong sebagai sistem koloid adalah...
+A. Air dan gula
+B. Air dan pasir
+C. Susu
+D. Larutan garam
+E. Alkohol 70%
+Jawaban: C
+
+Efek Tyndall adalah fenomena penghamburan cahaya oleh partikel koloid. Contoh yang paling sering kita jumpai dalam kehidupan sehari-hari adalah...
+A. Pelangi setelah hujan
+B. Terbentuknya delta di muara sungai
+C. Sorot lampu mobil di malam yang berkabut
+D. Proses pemutihan gula
+E. Penggunaan tawas untuk menjernihkan air
+Jawaban: C
+
+Asap yang keluar dari knalpot kendaraan adalah contoh sistem koloid dengan fase terdispersi dan medium pendispersi berturut-turut...
+A. Gas dalam cair
+B. Padat dalam gas
+C. Gas dalam padat
+D. Cair dalam gas
+E. Padat dalam cair
+Jawaban: B
+
+Menurut teori asam-basa Arrhenius, suatu zat disebut asam jika...
+A. Dapat menerima pasangan elektron
+B. Dalam air melepaskan ion H⁺
+C. Dapat mendonorkan proton (H⁺)
+D. Dalam air melepaskan ion OH⁻
+E. Rasanya masam
+Jawaban: B
+
+Perhatikan reaksi berikut: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻. Menurut teori Bronsted-Lowry, pasangan asam-basa konjugasi yang benar adalah...
+A. NH₃ dan H₂O
+B. H₂O dan NH₄⁺
+C. NH₃ dan OH⁻
+D. H₂O dan OH⁻
+E. NH₄⁺ dan OH⁻
+Jawaban: D
+
+Larutan dengan pH = 5 memiliki konsentrasi ion H⁺ sebesar...
+A. 1 × 10⁻⁵ M
+B. 1 × 10⁻⁹ M
+C. 1 × 10⁻⁴ M
+D. 5 M
+E. 9 M
+Jawaban: A
+
+Suatu larutan basa lemah LOH 0.1 M memiliki tetapan ionisasi basa (Kb) = 1 × 10⁻⁵. pH larutan tersebut adalah...
+A. 3
+B. 4
+C. 9
+D. 10
+E. 11
+Jawaban: E
+
+Hidrolisis garam terjadi ketika ion-ion dari garam bereaksi dengan air. Garam yang akan mengalami hidrolisis total jika dilarutkan dalam air adalah...
+A. NaCl
+B. CH₃COONa
+C. NH₄Cl
+D. (NH₄)₂CO₃
+E. K₂SO₄
+Jawaban: D
+
+Larutan garam CH₃COOK dalam air akan bersifat...
+A. Asam, karena hidrolisis ion K⁺
+B. Basa, karena hidrolisis ion CH₃COO⁻
+C. Netral, karena tidak terhidrolisis
+D. Asam, karena hidrolisis ion CH₃COO⁻
+E. Basa, karena hidrolisis ion K⁺
+Jawaban: B
+
+Larutan penyangga atau buffer adalah larutan yang dapat mempertahankan pH. Campuran yang dapat membentuk larutan penyangga adalah...
+A. NaOH dan NaCl
+B. HCl dan NH₄Cl
+C. CH₃COOH dan CH₃COONa
+D. HNO₃ dan NaNO₃
+E. H₂SO₄ dan K₂SO₄
+Jawaban: C
+
+Rumusan hasil kali kelarutan (Ksp) untuk senyawa Ag₂CrO₄ yang benar adalah...
+A. Ksp = [Ag⁺][CrO₄²⁻]
+B. Ksp = [Ag⁺]²[CrO₄²⁻]
+C. Ksp = [2Ag⁺][CrO₄²⁻]
+D. Ksp = [Ag⁺][CrO₄²⁻]²
+E. Ksp = [Ag₂⁺][CrO₄²⁻]
+Jawaban: B
+
+Jika kelarutan (s) dari CaF₂ dalam air adalah x mol/L, maka nilai Ksp dari CaF₂ adalah...
+A. x²
+B. 2x²
+C. 4x³
+D. 27x⁴
+E. x³
+Jawaban: C
+
+Sifat koligatif larutan adalah sifat larutan yang bergantung pada...
+A. Jenis zat terlarut
+B. Jumlah partikel zat terlarut
+C. Jenis pelarut
+D. Warna larutan
+E. Volume larutan
+Jawaban: B
+
+Di antara larutan berikut yang memiliki titik didih paling tinggi adalah...
+A. NaCl 0,1 m
+B. Glukosa (C₆H₁₂O₆) 0,1 m
+C. Urea (CO(NH₂)₂) 0,2 m
+D. MgCl₂ 0,1 m
+E. Sukrosa 0,1 m
+Jawaban: D
+
+Penambahan etilen glikol ke dalam radiator mobil bertujuan untuk...
+A. Menaikkan titik didih dan menaikkan titik beku air radiator
+B. Menurunkan titik didih dan menaikkan titik beku air radiator
+C. Menaikkan titik didih dan menurunkan titik beku air radiator
+D. Menurunkan titik didih dan menurunkan titik beku air radiator
+E. Membuat air radiator lebih berwarna
+Jawaban: C
+
+Tekanan osmotik darah manusia pada suhu 37 °C adalah sekitar 7,7 atm. Larutan infus yang akan dimasukkan ke dalam tubuh harus bersifat isotonik, artinya...
+A. Memiliki tekanan osmotik lebih tinggi dari darah
+B. Memiliki tekanan osmotik lebih rendah dari darah
+C. Memiliki tekanan osmotik yang sama dengan darah
+D. Tidak memiliki tekanan osmotik
+E. Dapat membekukan darah
+Jawaban: C
+
+Persamaan reaksi setara untuk pembakaran sempurna gas etana (C₂H₆) adalah...
+A. C₂H₆ + O₂ → CO₂ + H₂O
+B. C₂H₆ + 5O₂ → 2CO₂ + 3H₂O
+C. 2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O
+D. C₂H₆ + O₂ → C + H₂O
+E. 2C₂H₆ + 5O₂ → 4CO + 6H₂O
+Jawaban: C
+
+Berdasarkan persamaan reaksi: 2H₂ (g) + O₂ (g) → 2H₂O (l). Pernyataan yang benar adalah...
+A. 1 mol H₂ bereaksi dengan 1 mol O₂
+B. 2 gram H₂ bereaksi dengan 1 gram O₂
+C. 2 molekul H₂ bereaksi dengan 1 molekul O₂ menghasilkan 2 molekul H₂O
+D. Perbandingan volume H₂ : O₂ : H₂O adalah 1 : 1 : 1
+E. Total massa pereaksi lebih besar dari total massa produk
+Jawaban: C
+
+Koefisien reaksi a, b, dan c dari persamaan reaksi: a Al(s) + b HCl(aq) → c AlCl₃(aq) + d H₂(g) setelah disetarakan adalah...
+A. 1, 3, 1
+B. 2, 6, 2
+C. 1, 6, 2
+D. 2, 3, 1
+E. 2, 6, 3
+Jawaban: B
+
+Istilah stoikiometri dalam kimia berasal dari bahasa Yunani "stoicheion" yang berarti "unsur" dan "metron" yang berarti "pengukuran". Jadi, stoikiometri secara mendasar mempelajari tentang...
+A. Perubahan energi dalam reaksi kimia
+B. Kecepatan reaksi kimia
+C. Hubungan kuantitatif antara reaktan dan produk
+D. Sifat-sifat fisik zat
+E. Struktur atom
+Jawaban: C
+
+Diketahui Ar H=1, O=16. Jumlah mol yang terdapat dalam 9 gram air (H₂O) adalah...
+A. 0,25 mol
+B. 0,5 mol
+C. 1 mol
+D. 1,5 mol
+E. 2 mol
+Jawaban: B
+
+Sebanyak 4 gram NaOH (Ar Na=23, O=16, H=1) dilarutkan dalam air hingga volumenya menjadi 500 mL. Konsentrasi larutan yang terbentuk adalah...
+A. 0,05 M
+B. 0,1 M
+C. 0,2 M
+D. 0,4 M
+E. 0,5 M
+Jawaban: C
+
+Pada reaksi pembakaran metana: CH₄ (g) + 2O₂ (g) → CO₂ (g) + 2H₂O (g). Jika 4 liter gas metana dibakar, maka volume gas oksigen yang diperlukan adalah...
+A. 2 liter
+B. 4 liter
+C. 6 liter
+D. 8 liter
+E. 10 liter
+Jawaban: D
+
+Pereaksi pembatas dalam suatu reaksi kimia adalah pereaksi yang...
+A. Jumlahnya paling sedikit dalam gram
+B. Jumlahnya paling banyak dalam mol
+C. Habis bereaksi terlebih dahulu
+D. Memiliki massa molekul paling kecil
+E. Tersisa setelah reaksi selesai
+Jawaban: C
+
+Gerak Brown pada sistem koloid disebabkan oleh...
+A. Gaya gravitasi
+B. Tumbukan antarpartikel koloid
+C. Tumbukan partikel medium pendispersi dengan partikel terdispersi
+D. Tolak-menolak antar muatan partikel koloid
+E. Tarik-menarik antar partikel koloid
+Jawaban: C
+
+Larutan HCl 0,01 M memiliki pH sebesar...
+A. 1
+B. 2
+C. 12
+D. 13
+E. 14
+Jawaban: B
+
+Garam yang berasal dari asam kuat dan basa kuat akan memiliki pH...
+A. > 7
+B. < 7
+C. = 7
+D. = 0
+E. = 14
+Jawaban: C
+
+Jika diketahui Ksp AgCl = 1 × 10⁻¹⁰, maka kelarutan AgCl dalam air murni adalah...
+A. 1 × 10⁻⁴ mol/L
+B. 1 × 10⁻⁵ mol/L
+C. 1 × 10⁻⁶ mol/L
+D. 1 × 10⁻¹⁰ mol/L
+E. 2 × 10⁻¹⁰ mol/L
+Jawaban: B
+
+Penambahan sejumlah gula pada segelas teh akan membuat teh terasa manis. Dalam hal ini, gula berfungsi sebagai...
+A. Pelarut
+B. Zat terlarut
+C. Larutan
+D. Koloid
+E. Suspensi
+Jawaban: B
+
+Dalam persamaan reaksi: Fe₂O₃ + 3CO → 2Fe + 3CO₂. Zat yang bertindak sebagai reduktor adalah...
+A. Fe₂O₃
+B. CO
+C. Fe
+D. CO₂
+E. O₂
+Jawaban: B

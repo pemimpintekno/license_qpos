@@ -1,0 +1,199 @@
+Partikel dasar penyusun atom yang bermuatan positif adalah...
+A. Elektron
+B. Proton
+C. Neutron
+D. Nukleon
+E. Ion
+Jawaban: B
+
+Seorang ilmuwan yang terkenal dengan model atomnya yang menyerupai roti kismis, di mana elektron tersebar di dalam bola pejal bermuatan positif, adalah...
+A. John Dalton
+B. J.J. Thomson
+C. Ernest Rutherford
+D. Niels Bohr
+E. Erwin Schrödinger
+Jawaban: B
+
+Suatu atom memiliki nomor atom 19 dan nomor massa 39. Jumlah proton, elektron, dan neutron dalam atom tersebut secara berurutan adalah...
+A. 19, 19, 20
+B. 19, 20, 19
+C. 20, 19, 19
+D. 19, 19, 39
+E. 39, 19, 20
+Jawaban: A
+
+Konfigurasi elektron dari unsur Natrium (Na) dengan nomor atom 11 adalah...
+A. 2, 8, 1
+B. 2, 1, 8
+C. 2, 8, 2
+D. 2, 9
+E. 1, 8, 2
+Jawaban: A
+
+Unsur-unsur yang terletak dalam satu golongan pada sistem periodik memiliki kesamaan dalam hal...
+A. Jumlah kulit elektron
+B. Jumlah elektron valensi
+C. Jumlah proton
+D. Nomor massa
+E. Sifat fisis
+Jawaban: B
+
+Unsur Klorin (Cl) dengan nomor atom 17 terletak pada periode dan golongan...
+A. Periode 3, Golongan VIIA
+B. Periode 3, Golongan IA
+C. Periode 4, Golongan VIIA
+D. Periode 7, Golongan IIIA
+E. Periode 2, Golongan VIIA
+Jawaban: A
+
+Dalam sistem periodik modern, unsur-unsur disusun berdasarkan kenaikan...
+A. Nomor massa
+B. Jumlah neutron
+C. Massa atom relatif
+D. Nomor atom
+E. Jari-jari atom
+Jawaban: D
+
+Sifat keperiodikan unsur yang menyatakan energi yang dibutuhkan untuk melepaskan satu elektron dari atom netral dalam wujud gas disebut...
+A. Afinitas elektron
+B. Jari-jari atom
+C. Keelektronegatifan
+D. Energi ionisasi
+E. Sifat logam
+Jawaban: D
+
+Di antara unsur-unsur berikut: F, Cl, Br, I. Unsur yang memiliki keelektronegatifan paling besar adalah...
+A. F
+B. Cl
+C. Br
+D. I
+E. Semuanya sama
+Jawaban: A
+
+Unsur-unsur yang terletak di golongan VIIIA dikenal sebagai gas mulia karena...
+A. Sangat reaktif
+B. Sulit ditemukan di alam
+C. Memiliki konfigurasi elektron yang sangat stabil
+D. Berwujud gas pada suhu ruang
+E. Dapat membentuk ion positif
+Jawaban: C
+
+Stoikiometri adalah cabang ilmu kimia yang mempelajari tentang...
+A. Kecepatan reaksi
+B. Energi dalam reaksi kimia
+C. Hubungan kuantitatif antara pereaksi dan hasil reaksi
+D. Struktur dan ikatan atom
+E. Sifat fisis dan kimia unsur
+Jawaban: C
+
+Bilangan Avogadro yang menyatakan jumlah partikel dalam 1 mol zat adalah...
+A. 6,02 x 10²² partikel
+B. 6,02 x 10²³ partikel
+C. 6,02 x 10⁻²³ partikel
+D. 3,01 x 10²³ partikel
+E. 12,04 x 10²³ partikel
+Jawaban: B
+
+Diketahui massa atom relatif (Ar) H=1 dan O=16. Massa molekul relatif (Mr) dari air (H₂O) adalah...
+A. 17
+B. 18
+C. 19
+D. 33
+E. 34
+Jawaban: B
+
+Jumlah mol dari 16 gram gas oksigen (O₂) jika diketahui Ar O=16 adalah...
+A. 0,25 mol
+B. 0,5 mol
+C. 1 mol
+D. 2 mol
+E. 4 mol
+Jawaban: B
+
+Volume dari 1 mol gas apa pun pada keadaan standar (STP) adalah...
+A. 22,4 liter
+B. 24,4 liter
+C. 11,2 liter
+D. 1 liter
+E. 100 liter
+Jawaban: A
+
+Persamaan reaksi yang sudah setara untuk reaksi antara gas hidrogen dan gas oksigen membentuk air adalah...
+A. H₂ + O₂ ⟶ H₂O
+B. H₂ + O ⟶ H₂O
+C. 2H₂ + O₂ ⟶ 2H₂O
+D. H₂ + 2O₂ ⟶ 2H₂O
+E. H + O ⟶ H₂O
+Jawaban: C
+
+Pada reaksi: N₂ (g) + 3H₂ (g) ⟶ 2NH₃ (g). Perbandingan volume gas-gas yang bereaksi dan hasil reaksi sesuai dengan hukum Gay-Lussac adalah...
+A. 1 : 3 : 2
+B. 2 : 3 : 1
+C. 1 : 1 : 1
+D. 2 : 1 : 3
+E. 3 : 1 : 2
+Jawaban: A
+
+Sebanyak 12 gram karbon (C) dibakar sempurna dengan oksigen menghasilkan karbondioksida (CO₂). Jika Ar C=12 dan O=16, massa CO₂ yang dihasilkan adalah...
+A. 12 gram
+B. 22 gram
+C. 28 gram
+D. 32 gram
+E. 44 gram
+Jawaban: E
+
+Rumus empiris dari senyawa yang memiliki rumus molekul C₆H₁₂O₆ adalah...
+A. C₆H₁₂O₆
+B. C₂H₄O₂
+C. CH₂O
+D. CHO
+E. C₁₂H₂₄O₁₂
+Jawaban: C
+
+Pereaksi yang habis bereaksi lebih dahulu dalam suatu reaksi kimia disebut...
+A. Pereaksi sisa
+B. Pereaksi pembatas
+C. Hasil reaksi
+D. Katalis
+E. Produk samping
+Jawaban: B
+
+Isotop adalah atom-atom dari unsur yang sama yang memiliki...
+A. Jumlah proton sama, jumlah neutron berbeda
+B. Jumlah neutron sama, jumlah proton berbeda
+C. Jumlah proton dan neutron yang sama
+D. Jumlah elektron berbeda
+E. Nomor massa sama, nomor atom berbeda
+Jawaban: A
+
+Unsur golongan alkali tanah terletak pada...
+A. Golongan IA
+B. Golongan IIA
+C. Golongan VIIA
+D. Golongan VIIIA
+E. Golongan IIB
+Jawaban: B
+
+Diketahui Ar Ca=40, C=12, O=16. Persentase massa Kalsium (Ca) dalam senyawa Kalsium Karbonat (CaCO₃) adalah...
+A. 12%
+B. 16%
+C. 40%
+D. 48%
+E. 100%
+Jawaban: C
+
+Suatu atom X memiliki 13 proton dan 14 neutron. Atom X akan membentuk ion dengan muatan...
+A. +1
+B. +2
+C. +3
+D. -1
+E. -2
+Jawaban: C
+
+Molaritas (M) adalah satuan konsentrasi yang menyatakan...
+A. Mol zat terlarut dalam 1 kg pelarut
+B. Mol zat terlarut dalam 1 liter larutan
+C. Gram zat terlarut dalam 100 mL larutan
+D. Fraksi mol zat terlarut
+E. Persentase massa zat terlarut
+Jawaban: B
