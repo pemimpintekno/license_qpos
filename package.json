@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "bun src/index.ts",
-    "build": "tsc",
-    "start": "bun dist/index.js",
+    "build": "bun build ./src/index.ts --outdir ./build --target=bun",
+    "start": "bun run ./build/index.js",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:studio": "prisma studio"

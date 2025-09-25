@@ -46,6 +46,8 @@ app
     return { profile: null };
   });
 
+app.get('/', ()=> Bun.file('src/public.html'))
+
 // --- PUBLIC API (for the licensed application) ---
 app.post('/activate', async ({ body, set }) => {
     const { serialKey, deviceId } = body;
