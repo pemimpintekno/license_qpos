@@ -44,7 +44,7 @@ export default new Elysia()
     }
     return { profile: null };
   })
-  .get("/", () => Bun.file("src/public.html"))
+  .get("/", () => Bun.file("public/public.html"))
 
   // --- PUBLIC API (for the licensed application) ---
   .post(
@@ -86,7 +86,7 @@ export default new Elysia()
   .group("/admin", (app) =>
     app
       // --- Admin Website ---
-      .get("/", () => Bun.file("src/admin.html"))
+      .get("/", () => Bun.file("public/admin.html"))
 
       // --- Admin Authentication ---
       .post(

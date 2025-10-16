@@ -56,7 +56,7 @@ function generateUniqueKey() {
 	for (let i = 0; i < randomPart.length; i += 5) chunks.push(randomPart.substring(i, i + 5));
 	return chunks.slice(0, 4).join("-");
 }
-new Elysia().use(html()).use(staticPlugin()).use(jwt({
+var src_default = new Elysia().use(html()).use(staticPlugin()).use(jwt({
 	name: "jwt",
 	secret: process.env.JWT_SECRET || "your-super-secret-jwt-key-change-me-in-production",
 	exp: "7d"
@@ -65,7 +65,7 @@ new Elysia().use(html()).use(staticPlugin()).use(jwt({
 	const profile = await jwt$1.verify(token);
 	if (profile && typeof profile.userId === "string") return { profile };
 	return { profile: null };
-}).get("/", () => Bun.file("src/public.html")).post("/activate", async ({ body, set }) => {
+}).get("/", () => Bun.file("public/public.html")).post("/activate", async ({ body, set }) => {
 	const { serialKey, deviceId } = body;
 	const keyToActivate = await prisma.licenseKey.findUnique({ where: { serialKey } });
 	if (keyToActivate && keyToActivate.status === "UNUSED") {
@@ -93,7 +93,7 @@ new Elysia().use(html()).use(staticPlugin()).use(jwt({
 }, { body: t.Object({
 	serialKey: t.String({ minLength: 1 }),
 	deviceId: t.String({ minLength: 1 })
-}) }).group("/admin", (app) => app.get("/", () => Bun.file("src/admin.html")).post("/login", async ({ jwt: jwt$1, body, set }) => {
+}) }).group("/admin", (app) => app.get("/", () => Bun.file("public/admin.html")).post("/login", async ({ jwt: jwt$1, body, set }) => {
 	const admin = await prisma.admin.findUnique({ where: { username: body.username } });
 	if (!admin || !await bcrypt.compare(body.password, admin.password)) {
 		set.status = 401;
@@ -203,10 +203,7 @@ new Elysia().use(html()).use(staticPlugin()).use(jwt({
 			message: "Key not found."
 		};
 	}
-})).listen(3e3, ({ hostname, port }) => {
-	console.log(`🚀 Licensing server running at http://${hostname}:${port}`);
-	console.log(`🔑 Admin dashboard available at http://${hostname}:${port}/admin`);
-});
+}));
 
 //#endregion
-export {  };
+export { src_default as default };
