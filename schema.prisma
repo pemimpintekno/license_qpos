@@ -6,8 +6,10 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  // uncomment next line if you use Prisma <5.10
+  // directUrl = env("DATABASE_URL_UNPOOLED")
 }
 
 model LicenseKey {
@@ -20,7 +22,7 @@ model LicenseKey {
   activatedAt DateTime?
 
   // Relation to the Admin who created this key
-  createdBy   Admin     @relation(fields: [createdById], references: [id])
+  createdBy   Admin  @relation(fields: [createdById], references: [id])
   createdById String
 }
 
@@ -34,4 +36,3 @@ model Admin {
   // Relation to all keys created by this admin
   licenseKeys LicenseKey[]
 }
-
