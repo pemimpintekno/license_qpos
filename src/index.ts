@@ -22,7 +22,7 @@ function generateUniqueKey(): string {
 }
 
 // --- CREATE APP WITH PLUGINS ---
-const app = new Elysia()
+export default new Elysia()
   .use(html())
   .use(staticPlugin())
   .use(
@@ -223,9 +223,9 @@ const app = new Elysia()
   );
 
 // --- START SERVER ---
-app.listen(3000, ({ hostname, port }) => {
-  console.log(`🚀 Licensing server running at http://${hostname}:${port}`);
-  console.log(
-    `🔑 Admin dashboard available at http://${hostname}:${port}/admin`
-  );
-});
+// app.listen(3000, ({ hostname, port }) => {
+//   console.log(`🚀 Licensing server running at http://${hostname}:${port}`);
+//   console.log(
+//     `🔑 Admin dashboard available at http://${hostname}:${port}/admin`
+//   );
+// });
