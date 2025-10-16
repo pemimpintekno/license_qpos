@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "bun src/index.ts",
-    "build": "bun build ./src/index.ts --outdir ./build --target=bun",
-    "start": "bun run ./build/index.js",
+    "build": "bun build ./src/index.ts --outdir ./api --target=bun",
+    "start": "bun run ./api/index.js",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:studio": "prisma studio"
@@ -15,7 +15,8 @@
     "@types/bcryptjs": "^2.4.6",
     "@types/bun": "latest",
     "@types/node": "^24.5.2",
-    "@types/nodemailer": "^7.0.1"
+    "@types/nodemailer": "^7.0.1",
+    "tsup": "^8.5.0"
   },
   "peerDependencies": {
     "typescript": "^5"
