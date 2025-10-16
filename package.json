@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "bun src/index.ts",
-    "build": "bunx tsup src/index.ts --out-dir api --format esm --dts",
+    "build": "bunx tsdown src/index.ts -d api --dts",
     "start": "bun run ./api/index.js",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
